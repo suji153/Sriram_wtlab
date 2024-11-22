@@ -1,0 +1,137 @@
+HOME PAGE ---------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Online Book Store - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #2874f0; color: white; padding: 15px; text-align: center; }
+        nav { background-color: #333; color: white; padding: 10px; display: flex; justify-content: space-around; }
+        nav a { color: white; text-decoration: none; }
+        .container { padding: 20px; }
+        .book { margin: 10px; padding: 10px; border: 1px solid #ddd; display: inline-block; width: 30%; }
+        footer { background-color: #f1f1f1; text-align: center; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Online Book Store</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+    <div class="container">
+        <h2>Featured Books</h2>
+        <div class="book">Book 1</div>
+        <div class="book">Book 2</div>
+        <div class="book">Book 3</div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Online Book Store</p>
+    </footer>
+</body>
+</html>
+
+ 
+REGISTRAION AND USER LOGIN PAGE   ------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>User Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #2874f0; color: white; padding: 15px; text-align: center; }
+        .form-container { max-width: 400px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; }
+        .form-container input { width: 100%; padding: 10px; margin: 10px 0; }
+        button { background-color: #2874f0; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Login</h1>
+    </header>
+    <div class="form-container">
+        <form action="#">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+</body>
+</html>
+
+
+
+USER PROFILE PAGE --------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>User Profile</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #2874f0; color: white; padding: 15px; text-align: center; }
+        .container { padding: 20px; max-width: 600px; margin: 0 auto; }
+        .profile-detail { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome, [User Name]</h2>
+        <div class="profile-detail">
+            <strong>Email:</strong> user@example.com
+        </div>
+        <div class="profile-detail">
+            <strong>Books Purchased:</strong>
+            <ul>
+                <li>Book 1</li>
+                <li>Book 2</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+2) Prime Numbers 
+
+<?php
+// Function to check if a number is prime
+function isPrime($num) {
+    if ($num < 2) return false;
+    for ($i = 2; $i <= sqrt($num); $i++) {
+        if ($num % $i == 0) return false;
+    }
+    return true;
+}
+
+// Print prime numbers between 1 and 50
+echo "Prime numbers between 1 and 50 are:<br>";
+for ($i = 1; $i <= 50; $i++) {
+    if (isPrime($i)) {
+        echo $i . " ";
+    }
+}
+?>
+
+
+
+
+
+
+
+
+
